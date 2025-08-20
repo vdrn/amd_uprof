@@ -56,7 +56,7 @@ amd_uprof::resume_profiler();
 
 ```
 
-Line number and file name (`nightly` is enabled) will be automatically assigned to the beggining of the task, but not the end. If you need that, you'll have to manually drop the scope using `finish()` method:
+Start events automatically include line numbers and filenames (when nightly is enabled), but end events don't. To include this information in end events as well, manually close the scope with the finish() method:
 
 ``` rust
 amd_uprof::enable(true);  // once at the start
