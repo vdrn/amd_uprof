@@ -3,7 +3,13 @@ name = "amd_uprof"
 version = "0.1.0"
 edition = "2024"
 
+[features]
+
+nightly = []
+default = []
+
 [dependencies]
+amd_uprof-sys = { git = "https://github.com/vdrn/amd_uprof-sys" }
 
 [build-dependencies]
 bindgen = "0.72.0"

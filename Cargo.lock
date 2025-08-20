@@ -15,8 +15,14 @@ dependencies = [
 name = "amd_uprof"
 version = "0.1.0"
 dependencies = [
+ "amd_uprof-sys",
  "bindgen",
 ]
+
+[[package]]
+name = "amd_uprof-sys"
+version = "0.1.0"
+source = "git+https://github.com/vdrn/amd_uprof-sys#080fa1723139995f95474f64d505adf22f0e8ea7"
 
 [[package]]
 name = "bindgen"
