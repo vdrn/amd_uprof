@@ -13,7 +13,10 @@ use std::{
 };
 
 static ENABLED: AtomicBool = AtomicBool::new(false);
+
 pub fn enable(enabled: bool) {
+    // Miri does not support FFI calls
+    #[cfg(not(miri))]
     ENABLED.store(enabled, Ordering::Release);
 }
 fn enabled() -> bool {
@@ -54,7 +57,7 @@ static NAMES: LazyLock<RwLock<HashMap<String, UProfHandle>>> =
 
 pub struct TaskScope {
     /// Scopes must be dropped on the same thread that created them.
-    /// (Using `MutexGuard` to out out of `Send`)
+    /// (`MutexGuard` to opt out of `Send`)
     _no_send: PhantomData<MutexGuard<'static, ()>>,
 
     domain: Option<UProfHandle>,
