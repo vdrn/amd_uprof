@@ -22,7 +22,8 @@ dependencies = [
 [[package]]
 name = "amd_uprof-sys"
 version = "0.1.0"
-source = "git+https://github.com/vdrn/amd_uprof-sys#080fa1723139995f95474f64d505adf22f0e8ea7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d727b51e1cb63a0db079f578942e17941769e589cfdc6f4b5d999b2e802e7b9f"
 
 [[package]]
 name = "bindgen"

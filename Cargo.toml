@@ -9,7 +9,7 @@ nightly = []
 default = []
 
 [dependencies]
-amd_uprof-sys = { git = "https://github.com/vdrn/amd_uprof-sys" }
+amd_uprof-sys = { version = "0.1" }
 
 [build-dependencies]
 bindgen = "0.72.0"
