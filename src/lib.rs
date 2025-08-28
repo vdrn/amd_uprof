@@ -1,3 +1,4 @@
+#![doc = include_str!("../readme.md")]
 #![cfg_attr(feature = "nightly", feature(file_with_nul))]
 
 use core::{
