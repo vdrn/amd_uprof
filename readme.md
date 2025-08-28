@@ -4,7 +4,14 @@ Safe wrapper for AMD uProf
 
 Uses [amd_uprof-sys](https://github.com/vdrn/amd_uprof-sys) for FFI. If you have issues with build, refer to [amd_uprof-sys readme](https://github.com/vdrn/amd_uprof-sys)
 
+## Installation
+```toml 
+[dependencies]
+amd_uprof = "0.1"
+```
+
 ## Usage
+
 
 ### Prerequisites
 - If using CLI, add `-start-paused` option.
