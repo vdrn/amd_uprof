@@ -10,6 +10,7 @@ homepage = "https://github.com/vdrn/amd_uprof"
 repository = "https://github.com/vdrn/amd_uprof"
 readme = "readme.md"
 keywords = ["amd", "uprof", "profiling"]
+categories = ["development-tools::profiling", "api-bindings"]
 
 [features]
 nightly = []
